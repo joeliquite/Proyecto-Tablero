@@ -6,8 +6,12 @@ package ProyectoSemestre;
 
 /**
  *
- * @author Joel
+ * @author Joel Iquite
  */
 public class Main {
+    public static void main(String[] args) {//Fin
+        // Inicio de proyecto
+        
+    }// fin
     
 }
