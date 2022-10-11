@@ -15,14 +15,28 @@ public class Tabelero {
     
     /*Se utilizo el modificador private  los atributos nombre, id,  y fecha 
     sean utilizados dentro de su misma clase */
+    
+    //atributos, nombreTablero, identificador
     private String NombreTablero;
     private int Identificador;
     private int fecha;
+    //le agrege fecha por criterio propio
 
+    
+    //constructor
+    public Tabelero(String NombreTablero, int Identificador, int fecha) {
+        this.NombreTablero = NombreTablero;
+        this.Identificador = Identificador;
+        this.fecha = fecha;
+    }
+
+    
+    
+    //  consultor 
     public String getNombreTablero() {
         return NombreTablero;
     }
-
+    // metodo modificador
     public void setNombreTablero(String NombreTablero) {
         this.NombreTablero = NombreTablero;
     }
