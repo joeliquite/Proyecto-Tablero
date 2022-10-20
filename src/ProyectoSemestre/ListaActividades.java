@@ -8,12 +8,22 @@ package ProyectoSemestre;
  *
  * @author Joel
  */
-public class ListaActividades {
+public class ListaActividades {//inicio
   private String nombreActividades;
-  private int idList;
+  private int identificador;
   private int porcentajeAvance;
-  private String fechaVencimiento;
+  
+  
+  //constructor
 
+    public ListaActividades(String nombreActividades, int identificador, int porcentajeAvance) {
+        this.nombreActividades = nombreActividades;
+        this.identificador = identificador;
+        this.porcentajeAvance = porcentajeAvance;
+    }
+
+    
+    //consultor y modificador del nombre de las actividades
     public String getNombreActividades() {
         return nombreActividades;
     }
@@ -21,13 +31,15 @@ public class ListaActividades {
     public void setNombreActividades(String nombreActividades) {
         this.nombreActividades = nombreActividades;
     }
-
-    public int getIdList() {
-        return idList;
+    
+    
+    //consultor y modificador del identificador
+    public int getIdentificador() {
+        return identificador;
     }
 
-    public void setIdList(int idList) {
-        this.idList = idList;
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
     }
 
     public int getPorcentajeAvance() {
@@ -37,51 +49,6 @@ public class ListaActividades {
     public void setPorcentajeAvance(int porcentajeAvance) {
         this.porcentajeAvance = porcentajeAvance;
     }
-
-    public String getFechaVencimiento() {
-        return fechaVencimiento;
-    }
-
-    public void setFechaVencimiento(String fechaVencimiento) {
-        this.fechaVencimiento = fechaVencimiento;
-    }
+   
   
-  
-  
-  
- 
-  //clase actividades
-  public class actividades{
-      private String nombre;
-      private int  idActividades;
-      private String estado;
-
-        public String getNombre() {
-            return nombre;
-        }
-
-        public void setNombre(String nombre) {
-            this.nombre = nombre;
-        }
-
-        public int getIdActividades() {
-            return idActividades;
-        }
-
-        public void setIdActividades(int idActividades) {
-            this.idActividades = idActividades;
-        }
-
-        public String getEstado() {
-            return estado;
-        }
-
-        public void setEstado(String estado) {
-            this.estado = estado;
-        }
-      
-      
-      
-  }
-  
-}
+} //fin

@@ -8,82 +8,54 @@ package ProyectoSemestre;
  *
  * @author Joel
  */
-public class Tareas {
+public class Tareas { //Inicio de clase
+      private String NombreTareas;
+      private int identificador;
+      private String descripcion;
+      
+      
+      //constructor
+
+    public Tareas(String NombreTareas, int identificador, String descripcion) {
+        this.NombreTareas = NombreTareas;
+        this.identificador = identificador;
+        this.descripcion = descripcion;
+    }
+
     
-    private String nombre;
-    private int idTareas;
-    private String descriTareas;
-    private  String fechaVecimiento;
-
-    public String getNombre() {
-        return nombre;
+    // consultor y modificador Nombre
+    public String getNombreTareas() {
+        return NombreTareas;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreTareas(String NombreTareas) {
+        this.NombreTareas = NombreTareas;
     }
-
-    public int getIdTareas() {
-        return idTareas;
-    }
-
-    public void setIdTareas(int idTareas) {
-        this.idTareas = idTareas;
-    }
-
-    public String getDescriTareas() {
-        return descriTareas;
-    }
-
-    public void setDescriTareas(String descriTareas) {
-        this.descriTareas = descriTareas;
-    }
-
-    public String getFechaVecimiento() {
-        return fechaVecimiento;
-    }
-
-    public void setFechaVecimiento(String fechaVecimiento) {
-        this.fechaVecimiento = fechaVecimiento;
-    }
+     
     
-    
-    
-    
-    // clase para las etiquetas
-    public class Comentarios{
-        private String nombreComentario;
-        private int idComentario;
-        private String estado;
-
-        public String getNombreComentario() {
-            return nombreComentario;
-        }
-
-        public void setNombreComentario(String nombreComentario) {
-            this.nombreComentario = nombreComentario;
-        }
-
-        public int getIdComentario() {
-            return idComentario;
-        }
-
-        public void setIdComentario(int idComentario) {
-            this.idComentario = idComentario;
-        }
-
-        public String getEstado() {
-            return estado;
-        }
-
-        public void setEstado(String estado) {
-            this.estado = estado;
-        }
-        
-        
-        
-        
+    //Consultor y modificar de ID
+    public int getIdentificador() {
+        return identificador;
     }
+
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
+    }
+
+    
+    // consultor y modificador de descripcion
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+      
     
     
-}
+    
+    
+      
+   
+}// fin 

@@ -4,6 +4,7 @@
  */
 package ProyectoSemestre;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Joel
  */
-public class Tabelero {
+public class Tabelero  implements Serializable{
     
     /*Se utilizo el modificador private  los atributos nombre, id,  y fecha 
     sean utilizados dentro de su misma clase */
@@ -19,15 +20,15 @@ public class Tabelero {
     //atributos, nombreTablero, identificador
     private String NombreTablero;
     private int Identificador;
-    private int fecha;
+    
     //le agrege fecha por criterio propio
 
     
     //constructor
-    public Tabelero(String NombreTablero, int Identificador, int fecha) {
+    public Tabelero(String NombreTablero, int Identificador) {
         this.NombreTablero = NombreTablero;
         this.Identificador = Identificador;
-        this.fecha = fecha;
+       
     }
 
     
@@ -48,48 +49,21 @@ public class Tabelero {
     public void setIdentificador(int Identificador) {
         this.Identificador = Identificador;
     }
-
-    public int getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(int fecha) {
-        this.fecha = fecha;
-    }
     
     
+    //metodo analizador
+    public String toString(){
+        return "nombre del tablero" + " " + this.NombreTablero;
+     }
     
     
-    
-    
-    //clase para las etiquetas
-    public class Etiquetas{
-        private String nombreEtiquetas;
-        private int idEtiquetas;
 
-        public String getNombreEtiquetas() {
-            return nombreEtiquetas;
-        }
-
-        public void setNombreEtiquetas(String nombreEtiquetas) {
-            this.nombreEtiquetas = nombreEtiquetas;
-        }
-
-        public int getIdEtiquetas() {
-            return idEtiquetas;
-        }
-
-        public void setIdEtiquetas(int idEtiquetas) {
-            this.idEtiquetas = idEtiquetas;
-        }
-        
-        
-        
-    }
-
-    
-
+}
    
     
- 
-}
+    
+    
+    
+
+    
+

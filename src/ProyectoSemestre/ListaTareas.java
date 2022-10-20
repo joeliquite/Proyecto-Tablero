@@ -8,42 +8,40 @@ package ProyectoSemestre;
  *
  * @author Joel
  */
-public class ListaTareas {
+public class ListaTareas { // Inicio 
+    private String NombreTareas;
+    private int identificador;
     
-    private String NombreLista;
-    private int IdLista;
-    private String fechaLista;
+    
+    
+    //Constructor
 
-    public String getNombreLista() {
-        return NombreLista;
+    public ListaTareas(String NombreTareas, int identificador) {
+        this.NombreTareas = NombreTareas;
+        this.identificador = identificador;
     }
 
-    public void setNombreLista(String NombreLista) {
-        this.NombreLista = NombreLista;
+        //consultor y modificador  del atributo nombre
+    public String getNombreTareas() {
+        return NombreTareas;
     }
 
-    public int getIdLista() {
-        return IdLista;
+    public void setNombreTareas(String NombreTareas) {
+        this.NombreTareas = NombreTareas;
+    }
+    
+    // consultor y modificador del atributo id
+    public int getIdentificador() {
+        return identificador;
     }
 
-    public void setIdLista(int IdLista) {
-        this.IdLista = IdLista;
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
     }
+    
+    
+    
+    
+ }// fin
 
-    public String getFechaLista() {
-        return fechaLista;
-    }
 
-    public void setFechaLista(String fechaLista) {
-        this.fechaLista = fechaLista;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
