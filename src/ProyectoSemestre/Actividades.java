@@ -47,6 +47,11 @@ public class Actividades {
         this.estado = estado;
     }
     
+    public String mostrarActividades(){
+        return "Actividades" + this.nombre ;
+        
+    }
+    
     
     
     

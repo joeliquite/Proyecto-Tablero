@@ -51,6 +51,12 @@ public class Tareas { //Inicio de clase
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+    
+    
+    public String mostrarTarea(){
+        return "Actividades" + this.NombreTareas ;
+        
+    }
       
     
     

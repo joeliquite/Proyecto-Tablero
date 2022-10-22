@@ -49,6 +49,12 @@ public class ListaActividades {//inicio
     public void setPorcentajeAvance(int porcentajeAvance) {
         this.porcentajeAvance = porcentajeAvance;
     }
+    
+    
+    public String listActividades(){
+        return "Actividades" + this.nombreActividades ;
+        
+    }
    
   
 } //fin

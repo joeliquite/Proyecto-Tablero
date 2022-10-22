@@ -53,5 +53,8 @@ public class Comentarios {
    
     
    
-    
+    public String mostrarComent(){
+        return "Actividades" + this.nombreComent ;
+        
+    }
 }

@@ -14,6 +14,11 @@ public class ListaTareas { // Inicio
     
     
     
+    
+    
+    
+    
+    
     //Constructor
 
     public ListaTareas(String NombreTareas, int identificador) {
@@ -37,6 +42,13 @@ public class ListaTareas { // Inicio
 
     public void setIdentificador(int identificador) {
         this.identificador = identificador;
+    }
+    
+    
+    
+    public String mostraListTarea(){
+        return "Actividades" + this.NombreTareas ;
+        
     }
     
     

@@ -53,7 +53,7 @@ public class Tabelero  implements Serializable{
     
     //metodo analizador
     public String toString(){
-        return "nombre del tablero" + " " + this.NombreTablero;
+        return "nombre del tablero" + "  " + this.NombreTablero ;
      }
     
     

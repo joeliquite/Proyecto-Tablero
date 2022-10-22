@@ -41,6 +41,12 @@ public class Etiqueta {
     }
     
     
+    public String mostrarEtiqueta(){
+        return "Actividades" + this.nombreEtiquetas;
+        
+    }
+    
+    
     
     
 }
