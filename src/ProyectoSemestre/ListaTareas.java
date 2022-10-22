@@ -4,11 +4,13 @@
  */
 package ProyectoSemestre;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Joel
  */
-public class ListaTareas { // Inicio 
+public class ListaTareas implements Serializable { // Inicio 
     private String NombreTareas;
     private int identificador;
     
