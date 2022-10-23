@@ -9,59 +9,35 @@ package ProyectoSemestre;
  * @author Joel
  */
 public class Tareas { //Inicio de clase
-      private String NombreTareas;
-      private int identificador;
-      private String descripcion;
-      
-      
-      //constructor
-
-    public Tareas(String NombreTareas, int identificador, String descripcion) {
-        this.NombreTareas = NombreTareas;
-        this.identificador = identificador;
-        this.descripcion = descripcion;
-    }
-
-    
-    // consultor y modificador Nombre
-    public String getNombreTareas() {
-        return NombreTareas;
-    }
-
-    public void setNombreTareas(String NombreTareas) {
-        this.NombreTareas = NombreTareas;
-    }
      
-    
-    //Consultor y modificar de ID
-    public int getIdentificador() {
-        return identificador;
+   // Atributos
+    private String nombre;
+    private int idTarea;
+
+    public Tareas(String nombre, int idTarea) {
+        this.nombre = nombre;
+        this.idTarea = idTarea;
     }
 
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
+    public String getNombre() {
+        return nombre;
     }
 
-    
-    // consultor y modificador de descripcion
-    public String getDescripcion() {
-        return descripcion;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public int getIdTarea() {
+        return idTarea;
     }
-    
-    
-    public String mostrarTarea(){
-        return "Actividades" + this.NombreTareas ;
-        
+
+    public void setIdTarea(int idTarea) {
+        this.idTarea = idTarea;
     }
-      
-    
-    
-    
-    
+
+    public String mostrarDatos(){
+        return "--> " + " Nombre de Tarea: " + "-- "+this.nombre + " --";
+    }   
       
    
 }// fin 

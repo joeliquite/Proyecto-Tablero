@@ -11,50 +11,35 @@ import java.io.Serializable;
  * @author Joel
  */
 public class ListaTareas implements Serializable { // Inicio 
-    private String NombreTareas;
-    private int identificador;
-    
-    
-    
-    
-    
-    
-    
-    
-    //Constructor
-
-    public ListaTareas(String NombreTareas, int identificador) {
-        this.NombreTareas = NombreTareas;
-        this.identificador = identificador;
+   //Atributos
+    private String nombreLista;
+    private int idList;
+    // Constructor
+    public ListaTareas( String nombreLista, int idList) {
+        this.idList = idList;
+        this.nombreLista = nombreLista;
     }
 
-        //consultor y modificador  del atributo nombre
-    public String getNombreTareas() {
-        return NombreTareas;
+    public String getNombreLista() {
+        return nombreLista;
     }
 
-    public void setNombreTareas(String NombreTareas) {
-        this.NombreTareas = NombreTareas;
-    }
-    
-    // consultor y modificador del atributo id
-    public int getIdentificador() {
-        return identificador;
+    public void setNombreLista(String nombreLista) {
+        this.nombreLista = nombreLista;
     }
 
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
+    public int getIdList() {
+        return idList;
     }
-    
-    
-    
-    public String mostraListTarea(){
-        return "Actividades" + this.NombreTareas ;
-        
+
+    public void setIdList(int idList) {
+        this.idList = idList;
     }
-    
-    
-    
+
+    public String mostrarListas(){
+        return " Nombre de Lista: " + "-- "+this.nombreLista + " --";
+
+    }
     
  }// fin
 

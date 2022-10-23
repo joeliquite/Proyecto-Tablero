@@ -9,52 +9,32 @@ package ProyectoSemestre;
  * @author Joel
  */
 public class ListaActividades {//inicio
-  private String nombreActividades;
-  private int identificador;
-  private int porcentajeAvance;
-  
-  
-  //constructor
+  private String nombre;
+    private int id;
 
-    public ListaActividades(String nombreActividades, int identificador, int porcentajeAvance) {
-        this.nombreActividades = nombreActividades;
-        this.identificador = identificador;
-        this.porcentajeAvance = porcentajeAvance;
+    public ListaActividades(String nombre, int id) {
+        this.id = id;
+        this.nombre = nombre;
+
     }
 
-    
-    //consultor y modificador del nombre de las actividades
-    public String getNombreActividades() {
-        return nombreActividades;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombreActividades(String nombreActividades) {
-        this.nombreActividades = nombreActividades;
-    }
-    
-    
-    //consultor y modificador del identificador
-    public int getIdentificador() {
-        return identificador;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
+    public int getId() {
+        return id;
     }
 
-    public int getPorcentajeAvance() {
-        return porcentajeAvance;
+    public void setId(int id) {
+        this.id = id;
     }
-
-    public void setPorcentajeAvance(int porcentajeAvance) {
-        this.porcentajeAvance = porcentajeAvance;
+    public String mostrarDatos(){
+        return "--> " + " Nombre de Tarea: " + "-- "+this.nombre + " --";
     }
-    
-    
-    public String listActividades(){
-        return "Actividades" + this.nombreActividades ;
-        
-    }
-   
   
 } //fin
